@@ -1,7 +1,7 @@
 /// <reference types ="cypress"  />
 
 describe('DemoLogin Page', () => {
-    it('Verify The Title Of The Page positive Test', () => {
+    it('Verify The Login functionality positive Test', () => {
         
       cy.visit('https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials')
       cy.title().should('eq','OrangeHRM')
