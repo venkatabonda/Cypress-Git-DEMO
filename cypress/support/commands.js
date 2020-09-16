@@ -10,6 +10,7 @@
 //
 //
 import 'cypress-file-upload';
+import '@4tw/cypress-drag-drop'
 // -- This is a parent command --
 Cypress.Commands.add("login", (email, password) => { 
 cy.get('.login').click()
