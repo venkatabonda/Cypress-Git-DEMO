@@ -1,4 +1,4 @@
-/// <reference types ="cypress"  />
+
 
 describe('File upload', () => {
 
@@ -16,7 +16,7 @@ cy.get('#fileUpload').attachFile(yourFixturePath);
         cy.visit('https://css-tricks.com/examples/DragAndDropFileUploading/')
         const yourFixturePath = 'venkata.JPG'; // the file to be uploaded, from the cypress/fixtures/ directory
   cy.get('#file').attachFile(yourFixturePath);
-  cy.get('.box__success').should('contain.text','Done!')   // assert
+  cy.get('.box__success').should('contain.text','Done!')   // assertion
         
   
       })

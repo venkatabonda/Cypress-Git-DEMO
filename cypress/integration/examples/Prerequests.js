@@ -23,6 +23,6 @@ describe('Prerequests', ()=>{
         cy.search('Dress')
         cy.get('.lighter').should('contain,text','Dress')
 
-    })
+    });
 
 })
