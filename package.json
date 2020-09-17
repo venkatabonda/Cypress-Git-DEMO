@@ -8,7 +8,9 @@
   "author": "VenkataBonda",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^5.1.0"
+    "@4tw/cypress-drag-drop": "^1.4.0",
+    "cypress": "^5.1.0",
+    "cypress-file-upload": "^4.1.1"
   },
   "dependencies": {},
   "description": ""

@@ -14,6 +14,7 @@ describe('Metoffice Page', () => {
         cy.wait(3000)
         cy.get('#btnDetailedView').click()
         cy.contains("Today")
+        
       
     })
 
