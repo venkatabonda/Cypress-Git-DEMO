@@ -7,6 +7,7 @@ describe('Prerequests', ()=>{
     beforeEach(()=>{
         cy.visit('http://automationpractice.com/')
         cy.login('naveenanimation3@gmail.com','Test@1234')
+        cy.injectAxe()
 })
     it('Verify The login functionality with prerequests', () => {
 
@@ -15,6 +16,8 @@ describe('Prerequests', ()=>{
         cy.url().should('includes','controller=authentication')
         cy.get('.icon-home').click()
         cy.url().should('includes','index.php')
+        cy.checkA11y();
+        
 
     })
 
