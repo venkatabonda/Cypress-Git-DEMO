@@ -11,7 +11,7 @@ describe('background color ', () => {
      })
 
      it('Verify The background colorfor uk forecast link Buy now functionality Test', function() {
-     
+      // check the uk forcast link background color
         cy.visit('https://www.metoffice.gov.uk/')
         cy.title().should('eq','Weather and climate change - Met Office')
         cy.get("#ccc-recommended-settings").click({force: true})
