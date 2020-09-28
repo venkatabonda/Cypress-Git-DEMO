@@ -1,9 +1,8 @@
 /// <reference types ="cypress"  />
 
-
 describe('Click on signup test', () => {
 
-    it.skip('Verify file upload functionality ', () => {
+    it('Verify file upload functionality ', () => {
         
       cy.visit('https://www.spicejet.com//')
       cy.injectAxe();
@@ -15,17 +14,15 @@ describe('Click on signup test', () => {
              })
 
 
-   it('Verify file upload functionality', () => {
+   it('Verify file upload functionality ', () => {
         
          cy.visit('http://automationpractice.com/index.php')
-         //cy.injectAxe();
                 cy.title().should('eq','My Store')
                 cy.get(".ajax_add_to_cart_button").first().click()
                 cy.get(".cross").click()
                 cy.wait(3000)
                 cy.contains("Cart").trigger("#button_order_cart").click()
-                cy.url().should('include','?controller=order')
-                 //cy.checkA11y();
+                 cy.url().should('include','controller=order')
+             
               })
-
-            })
+})
